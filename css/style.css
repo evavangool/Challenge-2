@@ -1,0 +1,125 @@
+body{
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+
+  grid-template-areas:
+      "head"
+      "main1"
+      "main2"
+      "foot"
+}
+
+h1, h2{
+  font-weight: 300;
+  text-align: center;
+}
+
+header{
+  grid-area: head;
+}
+
+.main1{
+  grid-area: main1;
+}
+
+.main2{
+  grid-area: main2;
+}
+
+footer{
+  grid-area: foot;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px
+}
+
+.tijd{
+  font-size: 35px;
+}
+
+.titel{
+  font-weight: bold;
+  color: #B5B7B6;
+}
+
+/* iPad  ------------------------------------------------------------------------------------------------ */
+@media all and (min-width: 654px) and (max-width: 1023px){
+
+  body{
+    font-size: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+
+    grid-template-areas:
+          "head"
+          "main1"
+          "main2"
+          "foot"
+  }
+
+  .tijd{
+    font-size: 45px;
+  }
+}
+
+/* Macbook ------------------------------------------------------------------------------------------------ */
+@media all and (min-width: 1024px) and (max-width: 1599px){
+
+  body{
+    font-size: 23px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+
+    grid-template-areas:
+          "head head"
+          "main1 main2"
+          "foot foot"
+  }
+
+  .tijd{
+    font-size: 60px;
+  }
+}
+
+/* iMac ------------------------------------------------------------------------------------------------ */
+@media all and (min-width: 1600px) {
+
+  body{
+    font-size: 27px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+
+    grid-template-areas:
+          "head head"
+          "main1 main2"
+          "foot foot"
+  }
+
+  .tijd{
+    font-size: 75px;
+  }
+
+}
