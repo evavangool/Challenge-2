@@ -1,7 +1,7 @@
 var today = new Date();
 //dagen
-var dagNamen = ['Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag', 'Zondag'];
-var formatDay = (dagNamen[today.getDay() - 1]);
+var dagNamen = ['Zondag', 'Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag'];
+var formatDay = (dagNamen[today.getDay()]);
 
 document.getElementById('dag').innerHTML = formatDay;
 
